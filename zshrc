@@ -6,8 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #|------------------------|
-#| Author: muxi_k         |
-#| Date  : 2020-12-22     |
+#| Author: Noi         |
+#| Date  : 2021-3-27   |
 #|------------------------|
 
 #|Noi Date:2021-3-23 
