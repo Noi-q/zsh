@@ -6,8 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #|------------------------|
-#| Author: Noi         |
-#| Date  : 2021-3-27   |
+#|          Author: Muxi_k|
+#|          Editor: Noi   |
+#| Change the time: 2021-3-27   |
 #|------------------------|
 
 #|Noi Date:2021-3-23 
@@ -228,6 +229,6 @@ bindkey '^[[1;3D'      cdUndoKey
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#关闭桥金的快速启动zsh，所显示的提示
+#关闭原作者快速启动zsh，所显示的提示
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
