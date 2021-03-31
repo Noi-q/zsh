@@ -6,12 +6,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #|------------------------|
-#|          Author: Muxi_k|
-#|          Editor: Noi   |
-#| Change the time: 2021-3-27   |
+#| Author: muxi_k         |
+#| Date  : 2020-12-22     |
+#| Change the time:2021-3-31|
 #|------------------------|
 
 #|Noi Date:2021-3-23 
+#|Noi Date:2021-3-31
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -197,7 +198,9 @@ bindkey '^[[1;3D'      cdUndoKey
  case $hour in
      06|07|08)          message="\e[1;36m$me 早上好! 你起来了呀！清晨的第一束阳光给了你哦\e[0m"
      ;;                 
-     09|10|11|12)       message="\e[1;32m$me 上午好! 记得吃了饭再来哦!\e[0m"
+     09|10|11)          message="\e[1;36$me 才起来吗？我的好宝贝，昨晚又熬夜了吧？\e[0m"
+     ;;
+     12)                message="\e[1;32m$me 上午好! 记得吃了饭再来哦!\e[0m"
      ;;                 
      13|14|15|16|17|18) message="\e[1;33m$me 下午好! 在干嘛呢? 终端已经为你做好了准备哦！\e[0m"
      ;;                  
@@ -229,6 +232,6 @@ bindkey '^[[1;3D'      cdUndoKey
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#关闭原作者快速启动zsh，所显示的提示
+#关闭快速启动zsh，所显示的提示
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
