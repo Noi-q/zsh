@@ -1,4 +1,4 @@
-# auther: Muxi_k
+# auther: Noi
 
 PROMPT="
 %{$fg[white]%}%* \

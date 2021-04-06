@@ -1,6 +1,6 @@
 #|------------------------|
-#| Author: muxi_k         |
-#| Date  : 2020-12-22     |
+#| Author: Noi            |
+#| Date  : 2021-4-6       |
 #|------------------------|
 
 
@@ -178,7 +178,7 @@ bindkey '^[[1;3D'      cdUndoKey
 
 # 问候
 
-# me='Muxi_k'
+# me='Noi'
 # 
 # toilet -f ascii12 $me --gay -t
 # 
