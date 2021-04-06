@@ -1,18 +1,8 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 #|------------------------|
 #| Author: muxi_k         |
 #| Date  : 2020-12-22     |
-#| Change the time:2021-3-31|
 #|------------------------|
 
-#|Noi Date:2021-3-23 
-#|Noi Date:2021-3-31
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -188,50 +178,44 @@ bindkey '^[[1;3D'      cdUndoKey
 
 # 问候
 
- me='Noi'
- 
- toilet -f ascii12 $me --gay -t
- 
- hour=$(date +"%H")
- 
- # 通过不同时间问候不同句子
- case $hour in
-     06|07|08)          message="\e[1;36m$me 早上好! 你起来了呀！清晨的第一束阳光给了你哦\e[0m"
-     ;;                 
-     09|10|11)          message="\e[1;36$me 才起来吗？我的好宝贝，昨晚又熬夜了吧？\e[0m"
-     ;;
-     12)                message="\e[1;32m$me 上午好! 记得吃了饭再来哦!\e[0m"
-     ;;                 
-     13|14|15|16|17|18) message="\e[1;33m$me 下午好! 在干嘛呢? 终端已经为你做好了准备哦！\e[0m"
-     ;;                  
-     18|19|20|21|22|23) message="\e[1;35m$me 晚上好! 夜里的风凉吗? 你有想我吗？\e[0m"
-     ;;                 
-     00|01|03|04|05)    message="\e[1;38m$me 凌晨了! 在忙什么呢? 记得早点睡觉觉哦！\e[0m"
-     ;;
- esac
- 
- # cowsay 随机图像
- rand_cowsay_forture () {
-     local cowsay_list=(`cowsay -l | tail -n +2`);
-     local cowsay_picture=$[ $RANDOM % ${#cowsay_list[@]} ];
-     printf  $message | cowsay -f ${cowsay_list[$cowsay_picture]};
- }
- 
- # cowsay $message
- rand_cowsay_forture
- 
- echo -e "\e[1;31m当前时间: $(date +"%Y-%m-%d %H:%M:%S" | toilet -f wideterm --gay -t)\e[0m" 
- for i in `seq 33`
-     printf '-' 
-     sleep 0.01;
+# me='Muxi_k'
 # 
+# toilet -f ascii12 $me --gay -t
+# 
+# hour=$(date +"%H")
+# 
+# 通过不同时间问候不同句子
+# case $hour in
+#     06|07|08)          message="\e[1;36m$me 早上好! 清晨的第一缕阳光送给你\e[0m"
+#     ;;                 
+#     09|10|11|12)       message="\e[1;32m$me 上午好! 快去吃饭吧!\e[0m"
+#     ;;                 
+#     13|14|15|16|17|18) message="\e[1;33m$me 下午好! 在干嘛呢?\e[0m"
+#     ;;                  
+#     18|19|20|21|22|23) message="\e[1;35m$me 晚上好! 夜里的风凉吗?\e[0m"
+#     ;;                 
+#     00|01|03|04|05)    message="\e[1;38m$me 凌晨了! 在忙什么呢?\e[0m"
+#     ;;
+# esac
+# 
+# cowsay 随机图像
+# rand_cowsay_forture () {
+#     local cowsay_list=(`cowsay -l | tail -n +2`);
+#     local cowsay_picture=$[ $RANDOM % ${#cowsay_list[@]} ];
+#     printf  $message | cowsay -f ${cowsay_list[$cowsay_picture]};
+# }
+# 
+# # cowsay $message
+# rand_cowsay_forture
+# 
+# echo -e "\e[1;31m当前时间: $(date +"%Y-%m-%d %H:%M:%S" | toilet -f wideterm --gay -t)\e[0m" 
+# for i in `seq 33`
+#     printf '-' 
+#     sleep 0.01;
+
 # echo "\n"
 # fortune
 # echo "\n"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-#关闭快速启动zsh，所显示的提示
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
