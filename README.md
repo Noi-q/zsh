@@ -15,11 +15,11 @@
 > 这个脚本适用于Arch linux 衍生的发行版例如Manjaro.. 如果你是其他发行版请安装以上软件注释并且第17行
 
 ```sh
-$ git clone https://github.com/muxik/fast-zsh.git
+$ git clone https://github.com/Noi-q/zsh.git
 ```
 
 ```sh
-$ cd fast-zsh
+$ cd zsh
 ```
 
 ```sh
@@ -34,5 +34,5 @@ $ sudo chmod +x ./zsh_install.sh && ./zsh_install.sh
 
 
 
-> 12.22 更新了配置文件，修改了README,几乎兼容所有linux发行版
+> 4.6 更新了配置文件，修改了README,几乎兼容所有linux发行版
 
