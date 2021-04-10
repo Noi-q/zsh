@@ -15,11 +15,11 @@
 > 这个脚本适用于Arch linux 衍生的发行版例如Manjaro.. 如果你是其他发行版请安装以上软件注释并且第17行
 
 ```sh
-$ git clone https://github.com/Noi-q/zsh.git
+$ git clone https://github.com/Noi-q/fast-zsh.git
 ```
 
 ```sh
-$ cd zsh
+$ cd fast-zsh
 ```
 
 ```sh
