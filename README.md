@@ -34,5 +34,6 @@ $ sudo chmod +x ./zsh_install.sh && ./zsh_install.sh
 
 
 
+
 > 4.6 更新了配置文件，修改了README,几乎兼容所有linux发行版
 
